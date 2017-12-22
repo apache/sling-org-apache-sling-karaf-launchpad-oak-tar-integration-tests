@@ -233,7 +233,7 @@
             <groupId>org.ops4j.pax.exam</groupId>
             <artifactId>exam-maven-plugin</artifactId>
             <configuration>
-              <configClass>org.apache.sling.karaf.tests.configuration.SlingLaunchpadOakTarConfiguration</configClass>
+              <configClass>org.apache.sling.karaf.tests.configuration.SlingQuickstartOakTarConfiguration</configClass>
               <propagatedProperties>
                 http.port
               </propagatedProperties>

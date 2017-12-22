@@ -27,7 +27,7 @@ import static org.ops4j.pax.exam.CoreOptions.cleanCaches;
 import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.editConfigurationFilePut;
 
-public class SlingLaunchpadOakTarConfiguration extends KarafTestSupport {
+public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
 
     @Configuration
     public Option[] configuration() throws Exception {
@@ -48,7 +48,7 @@ public class SlingLaunchpadOakTarConfiguration extends KarafTestSupport {
             editConfigurationFilePut("etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-test.config", "scripts", scripts),
             editConfigurationFilePut("etc/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.config", "whitelist.bypass", true),
             addSlingFeatures(
-                "sling-launchpad-oak-tar",
+                "sling-quickstart-oak-tar",
                 "sling-launchpad-content",
                 "sling-auth-form",
                 "sling-auth-openid",
