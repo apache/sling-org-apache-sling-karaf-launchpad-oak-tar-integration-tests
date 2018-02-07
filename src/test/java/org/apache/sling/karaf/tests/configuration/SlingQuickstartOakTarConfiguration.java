@@ -53,11 +53,13 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
                 "sling-auth-form",
                 "sling-auth-openid",
                 "sling-auth-selector",
+                "sling-models",
+                "sling-installer-provider-jcr",
+                "sling-jcr-jackrabbit-security",
                 "sling-scripting-groovy",
                 "sling-scripting-javascript",
                 "sling-scripting-jsp",
-                "sling-installer-provider-jcr",
-                "sling-jcr-jackrabbit-security"
+                "sling-scripting-sightly"
             ),
             // test support
             mavenBundle().groupId("org.apache.sling").artifactId("org.apache.sling.junit.core").versionAsInProject(),
