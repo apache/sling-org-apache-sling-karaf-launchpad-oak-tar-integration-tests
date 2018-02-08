@@ -33,7 +33,8 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
     public Option[] configuration() throws Exception {
         final int httpPort = Integer.getInteger("http.port");
         final String[] scripts = new String[]{
-            "create path /repoinit/provisioningModelTest\ncreate service user provisioningModelUser"
+            "create path /repoinit/provisioningModelTest\ncreate service user provisioningModelUser",
+            "set ACL for everyone\nallow jcr:read on /\nend"
         };
         return OptionUtils.combine(baseConfiguration(),
             cleanCaches(true),
