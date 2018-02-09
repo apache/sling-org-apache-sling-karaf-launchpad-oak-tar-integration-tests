@@ -50,7 +50,6 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             editConfigurationFilePut("etc/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.config", "whitelist.bypass", true),
             addSlingFeatures(
                 "sling-quickstart-oak-tar",
-                "sling-launchpad-content",
                 "sling-auth-form",
                 "sling-auth-openid",
                 "sling-auth-selector",
