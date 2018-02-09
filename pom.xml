@@ -277,8 +277,6 @@
                 <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/resolution/WarSelectorServletTest.*</exclude>
                 <!-- SLING-5414 Launchpad/Provisioning Model only -->
                 <exclude>org/apache/sling/launchpad/webapp/integrationtest/provisioning/EmbeddedModelTest.*</exclude>
-                <!-- SLING-6130 -->
-                <exclude>org/apache/sling/launchpad/webapp/integrationtest/FiltersTest</exclude>
               </excludes>
             </configuration>
           </plugin>
