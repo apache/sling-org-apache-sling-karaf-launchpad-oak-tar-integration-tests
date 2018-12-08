@@ -58,6 +58,13 @@
       <artifactId>osgi.cmpn</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- Apache Jackrabbit -->
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-webdav</artifactId>
+      <version>2.16.3</version>
+      <scope>test</scope>
+    </dependency>
     <!-- Apache Karaf -->
     <dependency>
       <groupId>org.apache.karaf</groupId>
@@ -163,13 +170,13 @@
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpcore-osgi</artifactId>
+      <artifactId>httpcore</artifactId>
       <version>4.4.10</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient-osgi</artifactId>
+      <artifactId>httpclient</artifactId>
       <version>4.5.6</version>
       <scope>test</scope>
     </dependency>
