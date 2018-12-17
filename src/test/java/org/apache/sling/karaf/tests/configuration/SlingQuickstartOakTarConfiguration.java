@@ -54,7 +54,6 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
                 "sling-auth-openid",
-                "sling-auth-selector",
                 "sling-models",
                 "sling-installer-provider-jcr",
                 "sling-jcr-jackrabbit-security",
