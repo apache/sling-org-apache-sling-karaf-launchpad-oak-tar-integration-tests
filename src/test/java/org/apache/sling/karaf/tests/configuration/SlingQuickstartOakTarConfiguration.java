@@ -53,7 +53,6 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             addSlingFeatures(
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
-                "sling-auth-openid",
                 "sling-models",
                 "sling-installer-provider-jcr",
                 "sling-jcr-jackrabbit-security",
