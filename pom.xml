@@ -266,6 +266,7 @@
               </includes>
               <excludes>
                 <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/resolution/WarSelectorServletTest.*</exclude>
+                <exclude>org/apache/sling/launchpad/webapp/integrationtest/teleporter/ServicesPresentTest.*</exclude>
                 <!-- SLING-5414 Launchpad/Provisioning Model only -->
                 <exclude>org/apache/sling/launchpad/webapp/integrationtest/provisioning/EmbeddedModelTest.*</exclude>
               </excludes>
