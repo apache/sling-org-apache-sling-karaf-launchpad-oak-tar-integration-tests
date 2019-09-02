@@ -70,7 +70,7 @@
       <groupId>org.apache.karaf</groupId>
       <artifactId>apache-karaf</artifactId>
       <type>tar.gz</type>
-      <version>4.2.5</version>
+      <version>4.2.6</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
