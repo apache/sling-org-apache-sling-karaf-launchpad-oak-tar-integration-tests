@@ -59,7 +59,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
                 "sling-scripting-groovy",
                 "sling-scripting-javascript",
                 "sling-scripting-jsp",
-                "sling-scripting-sightly"
+                "sling-scripting-htl"
             ),
             // test support
             mavenBundle().groupId("org.apache.sling").artifactId("org.apache.sling.junit.core").versionAsInProject(),
