@@ -34,6 +34,10 @@
   <name>Apache Sling - Karaf Launchpad Integration Tests (Oak Tar)</name>
   <description>Launchpad Integration Tests for Apache Sling with Oak Tar on Karaf</description>
 
+  <properties>
+    <org.ops4j.pax.exam.version>4.13.3</org.ops4j.pax.exam.version>
+  </properties>
+
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</developerConnection>
@@ -50,12 +54,6 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <!-- OSGi -->
-    <dependency>
-      <groupId>org.osgi</groupId>
-      <artifactId>osgi.cmpn</artifactId>
       <scope>test</scope>
     </dependency>
     <!-- Apache Jackrabbit -->
@@ -111,19 +109,19 @@
     <dependency>
       <groupId>org.ops4j.pax.exam</groupId>
       <artifactId>pax-exam</artifactId>
-      <version>4.13.2</version>
+      <version>${org.ops4j.pax.exam.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.ops4j.pax.exam</groupId>
       <artifactId>pax-exam-container-karaf</artifactId>
-      <version>4.13.2</version>
+      <version>${org.ops4j.pax.exam.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.ops4j.pax.exam</groupId>
       <artifactId>pax-exam-link-mvn</artifactId>
-      <version>4.13.2</version>
+      <version>${org.ops4j.pax.exam.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -188,7 +186,7 @@
         <plugin>
           <groupId>org.ops4j.pax.exam</groupId>
           <artifactId>exam-maven-plugin</artifactId>
-          <version>4.13.2</version>
+          <version>${org.ops4j.pax.exam.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
