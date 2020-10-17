@@ -43,7 +43,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             // configurations for tests
             editConfigurationFilePut("etc/custom.properties", "sling.run.modes", "oak_tar"),
             editConfigurationFilePut("etc/users.properties", "admin", "admin,_g_:admingroup"), // Sling’s default admin credentials used in tests
-            editConfigurationFilePut("etc/org.ops4j.pax.web.cfg", "org.osgi.service.http.port", Integer.toString(httpPort)),
+            editConfigurationFilePut("etc/org.apache.felix.http.cfg", "org.osgi.service.http.port", Integer.toString(httpPort)),
             editConfigurationFilePut("etc/integrationTestsConfig.config", "message", "This test config should be loaded at startup"),
             editConfigurationFilePut("etc/org.apache.sling.servlets.resolver.SlingServletResolver.config", "servletresolver.cacheSize", "0"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet.config", "dav.root", "/dav"),
