@@ -64,6 +64,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
                 "sling-scripting-htl"
             ),
             addFelixHttpFeature(),
+            mavenBundle().groupId("org.ops4j.pax.url").artifactId("pax-url-classpath").versionAsInProject(),
             // test support
             mavenBundle().groupId("org.apache.sling").artifactId("org.apache.sling.junit.core").versionAsInProject(),
             mavenBundle().groupId("org.apache.sling").artifactId("org.apache.sling.junit.remote").versionAsInProject(),
