@@ -49,7 +49,6 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             editConfigurationFilePut("etc/org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet.config", "dav.root", "/dav"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet.config", "alias", "/server"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.repoinit.RepositoryInitializer~test.config", "scripts", scripts),
-            editConfigurationFilePut("etc/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.config", "whitelist.bypass", true),
             addSlingFeatures(
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
