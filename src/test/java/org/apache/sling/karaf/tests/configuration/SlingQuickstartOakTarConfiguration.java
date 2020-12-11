@@ -34,9 +34,10 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
     public Option[] configuration() throws Exception {
         final int httpPort = Integer.getInteger("http.port");
         final String[] scripts = new String[]{
-            "create path /repoinit/provisioningModelTest\ncreate service user provisioningModelUser",
+            "create service user provisioningModelUser",
             "create path (sling:OrderedFolder) /ANON_CAN_READ",
-            "set ACL for everyone\nallow jcr:read on /ANON_CAN_READ\nend"
+            "create path /repoinit/provisioningModelTest",
+            "set ACL for everyone\nallow jcr:read on /content\nallow jcr:read on /ANON_CAN_READ\nend"
         };
         return OptionUtils.combine(baseConfiguration(),
             cleanCaches(true),
@@ -48,7 +49,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             editConfigurationFilePut("etc/org.apache.sling.servlets.resolver.SlingServletResolver.config", "servletresolver.cacheSize", "0"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet.config", "dav.root", "/dav"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet.config", "alias", "/server"),
-            editConfigurationFilePut("etc/org.apache.sling.jcr.repoinit.RepositoryInitializer~test.config", "scripts", scripts),
+            editConfigurationFilePut("etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-test.config", "scripts", scripts),
             addSlingFeatures(
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
