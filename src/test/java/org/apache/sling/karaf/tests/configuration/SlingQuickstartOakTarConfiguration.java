@@ -21,10 +21,10 @@ package org.apache.sling.karaf.tests.configuration;
 import org.apache.sling.karaf.testing.KarafTestSupport;
 import org.ops4j.pax.exam.Configuration;
 import org.ops4j.pax.exam.Option;
-import org.ops4j.pax.exam.OptionUtils;
 
 import static org.ops4j.pax.exam.CoreOptions.cleanCaches;
 import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
+import static org.ops4j.pax.exam.OptionUtils.combine;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.editConfigurationFilePut;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.overrideJUnitBundles;
 
@@ -39,7 +39,8 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             "create path /repoinit/provisioningModelTest",
             "set ACL for everyone\nallow jcr:read on /content\nallow jcr:read on /ANON_CAN_READ\nend"
         };
-        return OptionUtils.combine(baseConfiguration(),
+        return combine(
+            baseConfiguration(),
             cleanCaches(true),
             // configurations for tests
             editConfigurationFilePut("etc/custom.properties", "sling.run.modes", "oak_tar"),
