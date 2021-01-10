@@ -29,7 +29,7 @@
   </parent>
 
   <artifactId>org.apache.sling.karaf-launchpad-oak-tar-integration-tests</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.12-SNAPSHOT</version>
 
   <name>Apache Sling - Karaf Launchpad Integration Tests (Oak Tar)</name>
   <description>Launchpad Integration Tests for Apache Sling with Oak Tar on Karaf</description>
