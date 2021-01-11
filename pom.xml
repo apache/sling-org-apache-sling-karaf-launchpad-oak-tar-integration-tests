@@ -246,7 +246,7 @@
             <server.ready.path.2>/bin/browser.html</server.ready.path.2>
             <server.ready.path.3>/sling-test/sling/sling-test.html:Sling client library tests</server.ready.path.3>
             <server.ready.path.4>/org.apache.sling.launchpad.testservices.repository.FirstRepositoryInitializer/SecondRepositoryInitializer.txt</server.ready.path.4>
-            <server.ready.timeout.seconds>120</server.ready.timeout.seconds>
+            <server.ready.timeout.seconds>300</server.ready.timeout.seconds>
           </systemPropertyVariables>
           <dependenciesToScan>
             <dependency>org.apache.sling:org.apache.sling.launchpad.integration-tests</dependency>
