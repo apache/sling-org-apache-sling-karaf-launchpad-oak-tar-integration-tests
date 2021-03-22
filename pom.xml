@@ -282,7 +282,7 @@
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
           <execution>
-            <id>ban-felix-scr-annotations</id>
+            <id>ban-plugins-and-dependencies</id>
             <phase>none</phase>
           </execution>
         </executions>
