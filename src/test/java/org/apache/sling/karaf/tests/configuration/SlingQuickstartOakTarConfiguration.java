@@ -53,6 +53,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
             editConfigurationFilePut("etc/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet.config", "alias", "/server"),
             editConfigurationFilePut("etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-test.config", "scripts", scripts),
             addSlingFeatures(
+                "sling-configs",
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
                 "sling-models",
