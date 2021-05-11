@@ -68,7 +68,7 @@
       <groupId>org.apache.karaf</groupId>
       <artifactId>apache-karaf</artifactId>
       <type>tar.gz</type>
-      <version>4.3.2-SNAPSHOT</version>
+      <version>4.3.2</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
