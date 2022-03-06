@@ -240,6 +240,7 @@
           </execution>
         </executions>
         <configuration>
+          <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
           <redirectTestOutputToFile>true</redirectTestOutputToFile>
           <systemPropertyVariables>
             <launchpad.http.server.url>http://localhost:${http.port}</launchpad.http.server.url>
