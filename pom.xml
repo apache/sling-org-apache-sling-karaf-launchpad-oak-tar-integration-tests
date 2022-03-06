@@ -260,11 +260,6 @@
             <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/resolution/WarSelectorServletTest.*</exclude>
             <!-- SLING-5414 Launchpad/Provisioning Model only -->
             <exclude>org/apache/sling/launchpad/webapp/integrationtest/provisioning/EmbeddedModelTest.*</exclude>
-            <!-- SLING-10366 -->
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/post/PostServletAtCopyTest.*</exclude>
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/post/PostServletCopyTest.*</exclude>
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/post/PostServletCreateTest.*</exclude>
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/post/PostServletImportTest.*</exclude>
           </excludes>
         </configuration>
       </plugin>
