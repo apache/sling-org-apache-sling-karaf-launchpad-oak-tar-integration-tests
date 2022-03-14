@@ -257,7 +257,6 @@
             <include>**/*Test.class</include>
           </includes>
           <excludes>
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/servlets/resolution/WarSelectorServletTest.*</exclude>
             <!-- SLING-5414 Launchpad/Provisioning Model only -->
             <exclude>org/apache/sling/launchpad/webapp/integrationtest/provisioning/EmbeddedModelTest.*</exclude>
             <!-- request tracker is null -->
