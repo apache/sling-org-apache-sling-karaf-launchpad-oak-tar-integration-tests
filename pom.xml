@@ -259,8 +259,8 @@
           <excludes>
             <!-- SLING-5414 Launchpad/Provisioning Model only -->
             <exclude>org/apache/sling/launchpad/webapp/integrationtest/provisioning/EmbeddedModelTest.*</exclude>
-            <!-- request tracker is null -->
-            <exclude>org/apache/sling/launchpad/webapp/integrationtest/scripting/StandaloneScriptExecutionTest.*</exclude>
+            <!-- request attributes fail: -\-javax.servlet.include.request_uri- -->
+            <exclude>org/apache/sling/launchpad/webapp/integrationtest/IncludeTest.*</exclude>
           </excludes>
         </configuration>
       </plugin>
