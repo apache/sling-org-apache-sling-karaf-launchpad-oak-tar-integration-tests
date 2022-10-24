@@ -57,6 +57,7 @@ public class SlingQuickstartOakTarConfiguration extends KarafTestSupport {
                 "sling-configs",
                 "sling-quickstart-oak-tar",
                 "sling-auth-form",
+                "sling-bundleresource",
                 "sling-models",
                 "sling-installer",
                 "sling-installer-factory-configuration",
