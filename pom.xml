@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</developerConnection>
-    <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</url>
+    <url>https://github.com/apache/sling-org-apache-sling-karaf-launchpad-oak-tar-integration-tests.git</url>
   </scm>
 
   <dependencies>
